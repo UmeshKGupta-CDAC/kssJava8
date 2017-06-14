@@ -1,4 +1,4 @@
-package ttn.kssJava8.session1;
+package ttn.kssJava8.session1.lambda;
 
 public interface Greeting {
 
