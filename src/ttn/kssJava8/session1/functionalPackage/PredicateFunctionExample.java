@@ -8,7 +8,6 @@ import java.util.function.Predicate;
 public class PredicateFunctionExample {
     public static void main(String args[]) {
         Predicate<Integer> positive = i -> i > 0;
-
         List<Integer> integerList = Arrays.asList(
                 new Integer(1), new Integer(10),
                 new Integer(200), new Integer(101),
@@ -17,6 +16,9 @@ public class PredicateFunctionExample {
         List<Integer> filteredList = filterList(integerList, positive);
 
         filteredList.forEach(System.out::println);
+
+        //Todo:1
+        // and,or,negate default method
     }
 
     public static List<Integer> filterList(List<Integer> listOfIntegers, Predicate<Integer> predicate) {

@@ -16,7 +16,7 @@ public class ClosuresExample {
             }
         });
 
-        //Todo:1 System.out.println( i + b);
+        //Todo:1 System.out.println( i + b); effective final variable concept
         //Todo:2
         //doProcess(a, i -> System.out.println(i + b));
 

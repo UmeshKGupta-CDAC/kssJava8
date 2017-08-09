@@ -24,6 +24,12 @@ public class FunctionTRExample {
         List<String> empNameList = convertEmpListToNamesList(employeeList, funcEmpToString);
 
         empNameList.forEach(System.out::println);
+
+
+        //Todo:1
+       /* Function<String,String> initialFunction= (String s)->s.substring(0,1);
+        List<String> empNameListInitials=convertEmpListToNamesList(employeeList, funcEmpToString.andThen(initialFunction));
+        empNameListInitials.forEach(str->{System.out.print(" "+str);});*/
     }
 
     public static List<String> convertEmpListToNamesList(List<Employee> employeeList, Function<Employee, String> funcEmpToString) {

@@ -14,6 +14,11 @@ public class ConsumerFunctionExample {
                 new Integer(0));
 
         printList(integerList, consumer);
+
+
+        //Todo:1 Usage of default method andThen() of Consumer
+        /* Consumer<Integer> consumerWithAndThen = consumer.andThen( i-> System.out.print("(printed "+i+")"));
+         printList(integerList,consumerWithAndThen);*/
     }
 
     public static void printList(List<Integer> listOfIntegers, Consumer<Integer> consumer) {
